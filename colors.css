@@ -110,7 +110,7 @@ footer {
 .social-links {
   display: flex;
   justify-content: space-around;
-  width: calc(90vw);
+  width: calc(100vw - 5rem);
   position: relative;
   padding: 1rem 2rem;
 }

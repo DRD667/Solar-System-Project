@@ -89,6 +89,10 @@ nav a:nth-child(2n) :hover {
     animation: float 12s ease-in-out alternate-reverse infinite;
   }
 
+  .social-links {
+    margin-right: 0;
+  }
+
   @keyframes float {
     to {
       transform: rotate(360deg);

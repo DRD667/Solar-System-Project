@@ -12,6 +12,7 @@ html {
 
 body {
   font-family: Poppins, sans-serif;
+  overflow-x: hidden;
 }
 
 .planet-name {
@@ -131,6 +132,15 @@ nav a:active {
   transform: scale(1.2);
 }
 
-footer {
+.social-links {
   display: flex;
+}
+
+footer article {
+  padding: 1rem;
+  color: gray;
+}
+
+ol {
+  padding: inherit;
 }

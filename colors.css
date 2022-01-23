@@ -109,14 +109,19 @@ footer {
 
 .social-links {
   display: flex;
-  justify-content: space-around;
   position: relative;
   width: 100%;
   padding: 1rem 2rem;
 }
 
+.social-links > * {
+  flex: 1;
+}
+
 .social-links svg {
   height: 4rem;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .social-links p {

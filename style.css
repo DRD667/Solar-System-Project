@@ -133,10 +133,6 @@ nav a:active {
   transform: scale(1.2);
 }
 
-.social-links {
-  display: flex;
-}
-
 footer article {
   padding: 1rem;
   color: gray;

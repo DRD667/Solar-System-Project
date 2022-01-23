@@ -1,0 +1,104 @@
+:root {
+  --accent-planet-700: #808080;
+  --accent-planet-300: #a7a6a8;
+}
+
+#mercury {
+  --accent-planet-700: #808080;
+  --accent-planet-300: #a7a6a8;
+}
+
+#venus {
+  --accent-planet-700: #b59b68;
+  --accent-planet-300: #d1b275;
+}
+
+#earth {
+  --accent-planet-700: #005792;
+  --accent-planet-300: #006eb7;
+}
+#mars {
+  --accent-planet-700: #f48665;
+  --accent-planet-300: #ff9575;
+}
+#jupiter {
+  --accent-planet-700: #c08527;
+  --accent-planet-300: #e8a336;
+}
+#saturn {
+  --accent-planet-700: #aca069;
+  --accent-planet-300: #e1d38b;
+}
+#uranus {
+  --accent-planet-700: #70adb1;
+  --accent-planet-300: #83cdd2;
+}
+
+#neptune {
+  --accent-planet-700: #758fbb;
+  --accent-planet-300: #92addb;
+}
+.planet-info {
+  box-shadow: inset 10px 10px 20px 5px var(--accent-planet-300);
+  background-color: var(--accent-planet-700);
+}
+
+.planet-img {
+  background-color: var(--accent-planet-300);
+}
+
+.planet-name {
+  text-shadow: 8px 4px 0px var(--accent-planet-300);
+  color: white;
+}
+
+#saturn img {
+  width: 40vh;
+}
+nav a {
+  transition: all 0.25s ease-out;
+  width: 40px;
+  opacity: 0.7;
+}
+
+nav a:hover {
+  transform: scale(1.2) rotate(10deg);
+  opacity: 1;
+}
+
+nav a:hover ~ a {
+  filter: grayscale(1);
+}
+
+nav a:nth-child(2n) :hover {
+  transform: scale(1.2) rotate(-10deg);
+}
+
+.planet-img img {
+  animation: float 2s ease-in-out alternate-reverse infinite;
+}
+
+@keyframes float {
+  to {
+    transform: translateY(2rem) rotate(5deg);
+  }
+}
+
+@media (max-width: 900px) {
+  .planet-img img {
+    animation: float 12s ease-in-out alternate-reverse infinite;
+  }
+
+  @keyframes float {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .planet-info {
+    box-shadow: inset 0 10px 10px 2px rgba(0, 0, 0, 0.247);
+  }
+}
+
+span {
+  color: rgb(171, 255, 115);
+}

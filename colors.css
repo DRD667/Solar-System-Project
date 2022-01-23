@@ -102,3 +102,23 @@ nav a:nth-child(2n) :hover {
 span {
   color: rgb(171, 255, 115);
 }
+
+footer {
+  background-color: rgb(53, 53, 53);
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 1rem 2rem;
+}
+
+.social-links svg {
+  height: 4rem;
+}
+
+.social-links p {
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
